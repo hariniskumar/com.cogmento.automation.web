@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [com.cogmento.automation.web Test Suite with Chrome]" guice-stage="DEVELOPMENT">
+  <parameter name="baseUrl" value="https://cogmento.com"/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.cogmento.automation.web.tool.ExtentReporter"/>
+  </listeners>
+  <test thread-count="5" name="MyTest(failed)">
+    <classes>
+      <class name="com.cogmento.automation.web.test.MyTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="addCompanyTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.cogmento.automation.web.test.MyTest -->
+    </classes>
+  </test> <!-- MyTest(failed) -->
+</suite> <!-- Failed suite [com.cogmento.automation.web Test Suite with Chrome] -->

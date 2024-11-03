@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">com.cogmento.automation.web Test Suite with Chrome</th></tr>
+<tr><td><a href="#t0">MyTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">21,901</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">com.cogmento.automation.web Test Suite with Chrome</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MyTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.cogmento.automation.web.test.MyTest</td><td><a href="#m0">addCompanyTest</a></td><td rowspan="1">1677027791764</td><td rowspan="1">17483</td></tr></tbody>
+</table>
+<h2>MyTest</h2><h3 id="m0">com.cogmento.automation.web.test.MyTest#addCompanyTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Phone - Type=Office, Description=Origin are a global leader in the design and manufacture of custom aluminum bi-fold doors and windows.
+Combining a high grade aluminum with precision engineering, Origin have a proven track record in providing high quality, functional and stylish products that are built to last., Category=Prospect, Phone - Country=United States, Website=www.originbifolds.com, Address - Country=United States, Social Channels - Twitter Handle=@originbifolds, Annual Revenue=10000000, Address - Zip Code=34292, Stock Symbol=ORN, Source=Internet, Name=Origin USA Inc., Industry=Construction - Interiors, Address - Street Address=700 Commerce Drive, Identifier=10001, VAT Number=1234567, exe file suffix for Image Upload=originIncUsa.exe, Social Channels - Facebook Profile Link=https://www.facebook.com/OriginBifoldsUSA, Tags=bi-fold patio doors; best interiors; bi-fold windows, Status=Active, Address - City=Venice, Priority=High, Social Channels - LinkedIn Profile Link=https://www.linkedin.com/company/origin-frames, Num. of Employees=100, Address - State/County=Florida, Phone - Number=941-484-4861}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;url&apos;]&quot;}
+  (Session info: chrome=110.0.5481.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-DI0P6JK&apos;, ip: &apos;10.0.0.41&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\harini\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63923}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c36ff32548aa3cc318d6732246e1a41
+*** Element info: {Using=xpath, value=//input[@name=&apos;url&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.cogmento.automation.web.page.CompanyAddOrEditPage.getWebsite(CompanyAddOrEditPage.java:271)
+	at com.cogmento.automation.web.page.CompanyAddOrEditPage.clickWebsite(CompanyAddOrEditPage.java:280)
+	at com.cogmento.automation.web.page.CompanyAddOrEditPage.setTextWebsite(CompanyAddOrEditPage.java:290)
+	at com.cogmento.automation.web.test.MyTest.addCompanyTest(MyTest.java:51)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
